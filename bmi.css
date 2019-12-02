@@ -1,0 +1,41 @@
+    input[type=text] {
+height: 50px;
+    width: 600px;
+margin-left: 30%;
+    
+}
+#wt1
+{
+    padding:10px ;
+}
+
+input[type=button] {
+margin-left: 45%;
+
+background-color: #4CAF50;
+border: none;
+width:10%;
+color: white;
+padding: 16px 32px; 
+}
+
+#result
+{
+    border: 2px solid black;
+    width: fit-content;
+    background-color: yellow;
+    margin-left: 40%;
+}
+
+#bmi
+{
+    margin-left: 38%;
+    color: orange;
+    font-size: 70px;
+    margin-top: 0px;
+}
+
+h1
+{
+    font-size: 90px;
+}

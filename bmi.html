@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>bmi</title>
+    </head>
+    <body> 
+        <form>
+            <h4>BMI Calculator</h4>
+           Enter Weight(In Kg's)<br> <input id="weight" type="text" placeholder="Your weight in kilograms">
+            <br><br>
+            Enter Height(In Meter)<br><input id="height" type="text" placeholder="Your height in meters" >
+            <br> <br>
+            
+            <input class = "submit" type="button"  value="Submit" onclick="bmi()" />
+            <p id="result">Here will be your result</p>
+        </form>
+                <script type="text/javascript">
+                
+                function bmi () {
+var height = Number(document.getElementById("height").value);
+var weight = Number(document.getElementById("weight").value);
+var result = weight / (height * height);
+document.getElementById("result").innerHTML = "Your bmi score is : " + result;
+}
+                </script>
+    </body>
+</html>

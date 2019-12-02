@@ -1,0 +1,81 @@
+<div id="map"> </div>
+<script>
+function initMap()
+  {
+  var location={ lat:20.593683 ,lng:78.962883};
+  var map=new google.maps.Map(document.getElementById("map"),{
+     zoom:4,
+     center:location
+  });
+  var marker=new google.maps.Marker({
+      position:location,
+      map:map
+   })
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbUdblkZsFfZZ-l6dnrfd32t78RAs5I4o&callback=initMap">
+</script>
+
+
+
+
+<div style="height:500px;background-color:#595959">
+        <div id="map"> </div>
+
+        
+
+    </div>
+
+
+
+              
+    
+
+
+      <div style="height:1500px;background-color:#595959">
+      <h1>PERFORMANCE NEWS</h1>  
+        
+      <div class="outer-box">
+        <div class="inner-box">
+          <img src="./p1.jpg" >
+          <div class="text">
+             
+          </div>
+        </div>
+        <div class="inner-box" id="mid1">
+            <img src="./p2.jpg" class="mid-img">
+            <div class="text">
+                <p>
+                </p>
+            </div>
+         </div>
+          <div class="inner-box">
+              <img src="./p3.jpg" >
+              <div class="text">
+                  <p>
+                  </p>
+              </div>
+          </div>
+          <div class="inner-box">
+              <img src="./p1.jpg" >
+              <div class="text">
+                  <p>
+                  </p>
+              </div>
+            </div>
+            <div class="inner-box" id="mid2">
+                <img src="./p2.jpg" >
+                <div class="text">
+                    <p>
+                    </p>
+                </div>
+             </div>
+              <div class="inner-box">
+                  <img src="./p3.jpg" >
+                  <div class="text">
+                      <p>
+                      </p>
+                  </div>
+              </div>
+      </div>
+      </div>

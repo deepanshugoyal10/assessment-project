@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    FACILITES
+</title>
+<link rel="stylesheet" type="text/css" href="facilities.css" media="all" />
+<style>
+
+
+
+#nav1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #nav {
+    float: right;
+  }
+  
+  #nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #nav a:hover {
+    background-color: #111;
+  }
+  
+#map
+{
+   height: 180px;
+   width:200px ;
+transform: translate(1300px,-180px);
+  }
+  #in1
+{
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+  padding-left: 150px;
+  transform: translate(0px,-50px);
+}
+</style>
+
+    </head>
+    <body>
+            <div class="container">
+                    <div class="top-right">
+                        <ul id="nav1">
+                            <li id="nav"><a href="membership.html">Membership</a></li>
+                            <li id="nav"><a href="facilites.html">Facilities</a></li>
+                            <li id="nav"><a href="about.html">About</a></li>
+                            <li id="nav"><a href="index.html">Home</a></li>
+
+
+                          </ul>
+                          
+                    </div>
+                   </div>
+              
+        <h1>WORKOUTS AVAILAIBLE </h1>
+        <h4>Workout formats for one and all</h4>
+        <table>
+            <tr>
+                <td id="td1">
+                    <a href="yoga.html" ><img src="w1.jpg" alt="yoga"></a>
+                </td>
+
+                <td id="td12">
+                  <a href="boxing.html">  <img src="w2.jpg" alt="boxing"></a>
+                </td>
+
+                <td id="td12">
+                        <a href="s$c.html">  <img src="w3.jpg" alt="s&c"></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="td2"><br>
+                    <a href="sports_condition.html"> <img src="w4.jpg" alt="sports_condition"></a>
+                </td>
+
+                <td id="td21"><br>
+                    <a href="sports.html">   <img src="w5.jpg" alt="sports"></a>
+                </td>
+            </tr>
+        </table>
+
+        <div style="height:550px;background-color:#333333">
+                    <h1 id="me1">CONTACT US</h1>
+                
+                <a href="https://www.instagram.com/deepanshu__goyal__/">   <img src="insta.jpg" alt="instagram" id="in1"></a>
+                 <a href="https://github.com/deepanshugoyal10"> <img src="github.jpg" alt="github" id="in1"></a>
+                 <a href="https://www.facebook.com/deepanshu1333"> <img src="facebook.jpg" alt="facebook" id="in1"></a>
+                   <a href="https://www.linkedin.com/in/deepanshu-goyal-0b020a192/"><img src="linkedin.jpg" alt="linkedin" id="in1"></a>
+                   <a href="https://deepanshugoyal10.github.io/resume/"><img src="resume.png" alt="resume" id="in1"></a>
+
+                   <div id="map"> </div>
+  <script>
+  function initMap()
+    {
+    var location={ lat:30.9010 ,lng:75.8573};
+    var map=new google.maps.Map(document.getElementById("map"),{
+       zoom:4,
+       center:location
+    });
+    var marker=new google.maps.Marker({
+        position:location,
+        map:map
+     })
+  }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbUdblkZsFfZZ-l6dnrfd32t78RAs5I4o&callback=initMap">
+  </script>
+         
+            </div>
+ 
+    </body>
+</html>

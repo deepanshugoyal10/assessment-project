@@ -1,0 +1,42 @@
+.button {
+    padding: 15px 15px;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color:#333333;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2 px #999;
+    margin-left: 45%;
+    opacity: 70%;
+margin-top:20px;  
+}
+  
+  .button:hover {background-color: gray}
+  
+  .button:active {
+    background-color: gray;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+  }
+
+
+
+
+
+  #btn
+  {
+    margin-top:30px; 
+    font-size:25px;
+padding-top: 10px 20px;
+background-color: #191716;
+color:#F15025;
+text-transform: uppercase;
+
+  }
+
+  #btn:hover{
+    color:#191716;
+    background-color: #f15025;
+  }

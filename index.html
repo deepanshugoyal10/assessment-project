@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="button.css" media="all" />
+<link rel="stylesheet" type="text/css" href="photos.css" media="all" />
+<style>
+
+#nav1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #nav {
+    float: left;
+  }
+  
+  #nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #nav a:hover {
+    background-color: #111;
+  }
+  #logo
+  {
+    transform: translate(-00px,0px);
+  }
+</style>
+<!-- <script src="jquery-3.4.1.min.js"></script> -->
+</head>
+<body>
+    <div class="container">
+      <div class="top-right">
+          <ul id="nav1">
+              <li id="nav"><a class="active" href="index.html">Home</a></li>
+              <li id="nav"><a href="about.html">About</a></li>
+              <li id="nav"><a href="facilites.html">Facilities</a></li>
+              <li id="nav"><a href="membership.html">Membership</a></li>
+
+            </ul>
+            
+      </div>
+     </div>
+
+
+<div class="parallax"></div>
+
+<div class="container">
+  <div class="centered"><b>NO PAIN NO GAIN</b></div>
+    <div class="centered1">Motivation is what gets you started.Habit is what keeps you going</div>
+      <!-- <button class="centered3">Join Us Today</<button> -->
+</div>
+
+<div style="height:400px;background-color:#333333">
+  <h1><b>WORLD CLASS FITNESS</b></h1>
+    <br><br><p id="x1">x x</p>
+      <p>Everything we do from top to bottom is of the highest quality to
+        ensure<br>we're equipped to help your goals of a healthy and fit lifestyle.
+      </p>
+</div>
+
+
+
+
+<div style="height:850px;background-color:#595959">
+    <h1><b>REAL WORLD RESULTS</b></h1>
+       <p id="x2">x x</p>
+      
+       <div class="outer-box1">
+          <div class="inner-box1">
+
+                 <div class="tcontainer">
+                 <img src="fit1.jpg" alt="Avatar" id="t1">
+                 <div class="overlay">
+                 <div class="text">
+                     <h1>JOHN</h1> 
+                     <p>I joined Gym about a year ago to get in shape for my wedding and never imaged how far I would go....</p> 
+                                    </div>
+                </div>
+                </div>
+</div>
+
+
+    <div class="inner-box1">
+              <div class="tcontainer">
+              <img src="fit2.jpg" alt="Avatar" id="t1">
+                   <div class="overlay">
+                 <div class="text">
+                       <h1>EMILY</h1> 
+                       <p>Thanks to exercising, I have found my lost energy and have a why not make the most of it </p> 
+                    </div>
+           </div>
+          </div>
+   </div>
+
+  
+      <div class="inner-box1">
+  <div class="tcontainer">
+              <img src="fit3.jpg" alt="Avatar" id="t1">
+                   <div class="overlay">
+                 <div class="text">
+                       <h1>ALISHA</h1> 
+                       <p>I started my weight loss journey exactly 14 months ago today. Getting to where I am now felt like the most impossible thing ever</p> 
+                                      </div>
+           </div>
+          </div>
+ </div>
+ </div>
+ 
+          <!-- <button class="button">Load More</button> -->
+              </div>
+  
+              <div style="height:500px;background-color:#333333">
+                  <div class='qcontainer'>
+                      <div class='quote-text'>
+                       <h1 id='quote'></h1>
+                        <p id='author'></p>
+                         </div>
+                          
+                              </div>
+  
+                            <script>
+                                var url="https://api.quotable.io/random";
+                                var xhr=new XMLHttpRequest()
+                                xhr.open('GET',url)
+                                xhr.onreadystatechange=getData
+                                function getData()
+                                {
+                                  var res_data=JSON.parse(this.responseText)
+                                  var a=res_data.content;
+                                  var b=res_data.author;
+                                  console.log(res_data);
+                                 var get_tag=document.getElementById('quote');
+                                  get_tag.innerHTML=a;
+                                  var get_tag1=document.getElementById('author');
+                                 get_tag1.innerHTML=b;
+                                 }
+                               xhr.send();                  
+                               </script>
+  </div>
+
+  <div style="height:1200px;background-color:#333333">
+    <br>  <h3 id="train">MEET OUR TRAINERS</h3>
+      <p id="x1">x x</p>
+      <div class="outer-box1">
+        <div class="inner-box1">
+          <div class="tcontainer">
+            <img src="t1.jpg" alt="Avatar" id="t1"">
+                 <div class="overlay">
+               <div class="text">
+                     <h1>John Doe</h1> 
+                     <p>Personal trainer</p> 
+                     <p>Experience of more than 5 years.Trained many Superstars</p>
+             </div>
+         </div>
+        </div>
+     </div>
+
+        <div class="inner-box1">
+          <div class="tcontainer">
+          <img src="t2.jpg" alt="Avatar" id="t1"">
+               <div class="overlay">
+             <div class="text">
+                   <h1>RITU</h1> 
+                   <p>Experience of more than 7 years</p> 
+           </div>
+       </div>
+      </div>
+         </div>
+          <div class="inner-box1">
+            <div class="tcontainer">
+              <img src="t3.jpg" alt="Avatar" id="t1"">
+                   <div class="overlay">
+                 <div class="text">
+                       <h1>ROCK</h1> 
+                       <p>Professional Body Builder</p> 
+                       <p>Heavy Weight Championship 2018,2017</p>
+               </div>
+           </div>
+          </div>
+               </div>    <br>
+               <!-- <button class="button">Load More</button> -->
+
+              </div>
+ 
+
+
+
+
+                <div style="height:500px;background-color:#595959">
+                  <table>
+                    <tr>
+                      <td>
+                          <img src="3.jpg" id="pic2">
+                        </td>
+                  
+                        <td id="t1">
+                            <h2 id="fsign">&nbsp&nbsp&nbspSign Up for free session</h2>
+                              <form> 
+                                  <br><br><br>Name<br><input type="text" placeholder="Enter your name" id="fsign1">
+                                  <br><br>Email<br><input type="text" placeholder="Enter email" id="fsign1">
+                                  <br><br><button type="submit" form="form1" value="Submit" class="button1" onclick="myFunction()">Enroll Now</button> 
+                                </form>
+                                <script>
+                                    function myFunction() {
+                                      alert("You have registerd yourself!");
+                                    }
+                                    </script>
+                          </td> 
+                      </tr>
+                  
+                  </table>
+                  </div>
+
+
+                  
+  
+
+
+                <div style="height:350px;background-color:#333333">
+                 <h1 id="me1">CONTACT US</h1>
+                
+              <a href="https://www.instagram.com/deepanshu__goyal__/">   <img src="insta.jpg" alt="instagram" id="in1"></a>
+               <a href="https://github.com/deepanshugoyal10"> <img src="github.jpg" alt="github" id="in1"></a>
+               <a href="https://www.facebook.com/deepanshu1333"> <img src="facebook.jpg" alt="facebook" id="in1"></a>
+                 <a href="https://www.linkedin.com/in/deepanshu-goyal-0b020a192/"><img src="linkedin.jpg" alt="linkedin" id="in1"></a>
+                  <a href="https://deepanshugoyal10.github.io/resume/"><img src="resume.png" alt="resume" id="in1"></a>
+                 <div id="map"> </div>
+<script>
+function initMap()
+  {
+  var location={ lat:30.9010 ,lng:75.8573};
+  var map=new google.maps.Map(document.getElementById("map"),{
+     zoom:4,
+     center:location
+  });
+  var marker=new google.maps.Marker({
+      position:location,
+      map:map
+   })
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbUdblkZsFfZZ-l6dnrfd32t78RAs5I4o&callback=initMap">
+</script>
+                  </div>
+
+
+</body>
+</html>
+
+
+
+
+
+

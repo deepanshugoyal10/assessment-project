@@ -1,0 +1,53 @@
+#pic2
+{
+  height: 200px;
+  padding-left: 300px;
+  padding-top: 50px;
+}
+
+#fit1
+{
+  height: 350px;
+  width:350px;
+  padding: 50px;
+}
+
+#fit2
+{
+    width:350px; 
+}
+#pic7
+{
+  width:300px;
+  height: 300px;
+  margin-left: 100px;
+}
+#t1
+{
+  height: 400px;
+  margin-right:20px;
+  width: 450px;
+
+  
+}
+#pic9
+{
+ 
+  filter: orange(100%);
+  opacity: 0.4;
+}
+
+#in1
+{
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+  padding-left: 150px;
+  transform: translate(0px,-50px);
+}
+
+#con
+{
+  height: 50px;
+  width:50px ;
+}
